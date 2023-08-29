@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <div class="calculator">
+            <object data="calculate_black_48dp.svg" type="image/svg+xml"></object>
             <h1>Calculadora</h1>
             <input id="num1" type="number" placeholder="Digite um número">
             <input id="num2" type="number" placeholder="Digite um número">
@@ -19,6 +20,13 @@
                 <button onclick="calc('/')">/</button>
             </div>
             <input readonly id="result">
+        </div>
+        <div class="history">
+            <h2>Histórico</h2>
+            <p>10 últimas operações:</p>
+            <div id="history">
+                
+            </div>
         </div>
     </div>
     

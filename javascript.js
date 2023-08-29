@@ -11,4 +11,12 @@ function calc(operation){
     }
     
     document.getElementById("result").value = result;
+
+    var newhistory = "<p>" +num1+' '+operation+' '+num2+' = '+result+ "</p>";
+    var history = document.getElementById("history")
+    history.innerHTML = newhistory + history.innerHTML;
+
+    if(history.children.length > 10){
+        history.removeChild(history.childNodes[10]);
+    }
 }
